@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Theme -->
+    <style name="Theme.Ellof" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Date & Time Picker Theme -->
+    <style name="EllofDatePicker" parent="android:Theme.Material.Dialog">
+        <item name="android:colorAccent">#F2C94C</item> <!-- MustardYellow -->
+        <item name="android:textColorPrimary">#2B2B2B</item>
+        <item name="android:background">#EFE4D6</item>
+    </style>
+
+    <style name="EllofTimePicker" parent="android:Theme.Material.Dialog">
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:colorAccent">#F2C94C</item>
+        <item name="android:textColorPrimary">#2B2B2B</item>
+        <item name="android:background">#FFEFE4D6</item>
+    </style>
+
+    <style name="Theme.Ellof.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.Ellof.AppWidgetContainer" parent="Theme.Ellof.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+
+
+</resources>
